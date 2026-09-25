@@ -1,0 +1,21 @@
+{
+  "name": "cf-worker-mirrors",
+  "version": "2.1.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy --env production",
+    "deploy:dev": "wrangler deploy --env development",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "tail": "wrangler tail mirrors",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^3.114.17"
+  },
+  "dependencies": {
+    "hono": "^4.12.34"
+  }
+}
